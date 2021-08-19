@@ -14,8 +14,8 @@ function mailing($template_file, $swap_var){
     try{
 
         // load the email to and subject from the $swap_var
-        $email_to = $swap_var['{TO_EMAIL}'];
-        $email_subject = $swap_var['{EMAIL_TITLE}']; // you can add time() to get unique subjects for testing: time();
+        $email_to = $swap_var['#email#'];
+        $email_subject = $swap_var['#subject#']; // you can add time() to get unique subjects for testing: time();
 
         // load in the template file for processing (after we make sure it exists)
         if (file_exists($template_file)) {

@@ -26,16 +26,17 @@
     </head>
     <body>
         <header>
-            <h1>{EMAIL_TITLE}</h1>
+            <h1>#subject#</h1>
         </header>
         <main>
-            #mesage#
+            #message#
             <br>
             <p><b>Full Name:</b> #fullName#</p>
-            <p><b>Email:</b> {EMAIL_TO}</p>
+            <p><b>Email:</b> #email#</p>
             <p><b>Phone:</b> #phone#</p>
         </main>
         <footer>
+            <hr>
             <i>If you recived this email by mistake. Contact Us</i><br>
             ekwuemeugochukwu83@gmail.com | +2348143440606
         </footer>

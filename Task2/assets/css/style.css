@@ -1225,7 +1225,7 @@ td {
 }
 
 form p {
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: center;
     color: red;
@@ -1238,4 +1238,17 @@ form p#success-form{
     color: green;
     border: 1px solid green;
     background: #green;
+}
+
+.skills-info div{
+    flex: 1;
+}
+
+.skills-info div:nth-child(3){
+    flex: 2;
+}
+@media(max-width: 425px) {
+    .skills-info{
+        flex-direction: column;
+    }
 }
