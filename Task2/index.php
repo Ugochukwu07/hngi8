@@ -11,6 +11,11 @@ include('app.php');
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+    b{
+        color: white !important;
+    }
+    </style>
 </head>
 
 <body>
@@ -121,6 +126,8 @@ include('app.php');
             <h2 style="color: #ffffff; margin: 10px 0px;">Occupation</h2>
             <p>Student/Freelancer</p>
             <p><b>Address:</b> Joy Hostel Unizik Road, Awka</p>
+            <p><b>Email Address:</b> ekwuemeugochukwu83@gmail.com</p>
+            <p><b>Phone:</b> +2348143440606</p>
             <p><b>State/Region:</b> Anambra State</p>
             <p><b>Country:</b> Nigeria</p>
         </div>
@@ -135,9 +142,9 @@ include('app.php');
                 <button id="project" onclick="showRequiredCategory(this)">BackEnd PHP Projects</button> -->
             </div>
             <div class="category-designing showCategory">
-                <a href="https://mazzydap.com"><img src="assets/images/mazzydap.PNG" alt="" width="350px"></a>
-                <a href="https://storelad.com/RedLion/"><img src="assets/images/snyc.PNG" alt="" width="350px"></a>
-                <a href="https://storelad.com/newshour/"><img src="assets/images/newshour.PNG" alt="" width="350px"></a>
+                <a href="https://mazzydap.com"><img src="https://storelad.com/mazzydap.PNG" alt="" width="350px"></a>
+                <a href="https://storelad.com/RedLion/"><img src="https://storelad.com/snyc.PNG" alt="" width="350px"></a>
+                <a href="https://storelad.com/newshour/"><img src="https://storelad.com/newshour.PNG" alt="" width="350px"></a>
             </div>
 
             <!-- <div class="category-animation hideCategory">
