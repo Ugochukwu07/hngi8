@@ -1101,7 +1101,8 @@ td {
         margin-top: 10px;
     }
     .about-me-info {
-        max-height: 500px;
+        padding: 20px;
+        max-height: 700px;
         overflow-y: scroll;
     }
     .leader .about-us-info,
@@ -1208,3 +1209,12 @@ td {
     position: absolute;
     min-height: 100%;
 }
+
+.about-me-info p {
+    margin-top: 30px;
+}
+
+.about-me-info p:first-child {
+    margin-top: 0px;
+}
+

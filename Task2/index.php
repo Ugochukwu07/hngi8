@@ -72,10 +72,20 @@
     <div class="container about" id="about">
         <h1>About</h1>
         <div class="about-me-info">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam provident quo vitae commodi vel nam adipisci eum ipsam quaerat?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam provident quo vitae commodi vel nam adipisci eum ipsam quaerat?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam provident quo vitae commodi vel nam adipisci eum ipsam quaerat?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam provident quo vitae commodi vel nam adipisci eum ipsam quaerat?</p>
+            <p><b>Full Name:</b> Ekwueme Ugochukwu Emmanuel</p>
+            <p><b>Date of Birth(DD/MM/YYYY):</b> 07/03/2000</p>
+            <p><b>Next of Kin:</b> Ekwueme Chigoize John</p>
+            <h2 style="color: #ffffff; margin: 10px 0px;">Education</h2>
+            <p><b>Name of Primary School:</b> Okoko Primary School Oko, Anambra State, Nigeria.</p>
+            <p><b>Year of Primary School(YYYY):</b> 2011</p>
+            <p><b>Name of Secoundary School:</b> Federal Government College Nise, Anambra State, Nigeria.</p>
+            <p><b>Year of Secoundary School(YYYY):</b> 2017</p>
+            <p><b>Year of O'Level(YYYY):</b> 2017</p>
+            <h2 style="color: #ffffff; margin: 10px 0px;">Family</h2>
+            <p><b>Martail Status:</b> Single</p>
+            <p><b>Father's Name:</b> Late Emmanuel Ifedirichukwu Ekwueme</p>
+            <p><b>Mother's Name:</b> Ugonwa Martina Ekwueme</p>
+            <p><b>Mother's Madien Name:</b> Okafor</p>
         </div>
         <img src="assets/images/balaji-malliswamy-uU9ZPjNp0TY-unsplash.jpg" alt="" width="350px">
     </div>
