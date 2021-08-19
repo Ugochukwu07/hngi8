@@ -468,7 +468,7 @@ span.m-left {
     max-width: 800px;
     height: auto;
     position: relative;
-    top: -70px;
+    top: -70px !important;
     right: 50%;
     left: 50%;
     transform: translateX(-50%);/* 
@@ -485,7 +485,7 @@ span.m-left {
     transition: .5s ease-in;
 }
 
-.skills-info ul li{
+.skills-info ul li, .skills-info p{
     font-size: 17px;
     margin-top: 5px;
     font-weight: 600;
@@ -899,10 +899,10 @@ td {
         right: 0;
     }
     .about-me-info {
-        top: 10%;
+        top: -7%;
     }
     .about img {
-        top: -15%;
+        top: -30%;
     }
     .work-category button {
         margin-top: 20px;
@@ -993,7 +993,7 @@ td {
         margin-top: 20px !important;
     }
     .skills-info {
-        top: 0;
+        top: 0 !important;
     }
     .work {
         margin-top: 90px;
@@ -1097,7 +1097,7 @@ td {
     .work,
     .contact,
     .about {
-        margin: 10px 5px 10px 5px;
+        margin: 10px 0px;
         width: 100%;
     }
     .profile-image {
@@ -1134,7 +1134,7 @@ td {
         margin: 9px auto;
     }
     .work .cover {
-        margin-top: -55px;
+        margin-top: -5px;
     }
     .work a img {
         transform: translateX(-13px);
@@ -1164,9 +1164,9 @@ td {
         font-size: .9rem;
     }
     form input,
-    form textarea {
+    form textarea{
         width: 95%;
-        margin: 10px;
+        /* margin: 10px; */
         padding: 10px;
         font-size: .9rem;
     }
@@ -1224,3 +1224,18 @@ td {
     margin-top: 0px;
 }
 
+form p {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: red;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid #d6b9b9;
+    background: #d6b9b9;
+}
+form p#success-form{
+    color: green;
+    border: 1px solid green;
+    background: #green;
+}

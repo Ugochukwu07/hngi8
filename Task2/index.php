@@ -1,12 +1,16 @@
+<?php 
+include('app.php');
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Ugochukwu</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -76,12 +80,20 @@
             <p><b>Full Name:</b> Ekwueme Ugochukwu Emmanuel</p>
             <p><b>Date of Birth(DD/MM/YYYY):</b> 07/03/2000</p>
             <p><b>Next of Kin:</b> Ekwueme Chigoize John</p>
+            <p><b>Residental Address:</b> Ezioko, Oko, Anambra State</p>
+            <p><b>State/Region:</b> Anambra State</p>
+            <p><b>Country:</b> Nigeria</p>
             <h2 style="color: #ffffff; margin: 10px 0px;">Education</h2>
             <p><b>Name of Primary School:</b> Okoko Primary School Oko, Anambra State, Nigeria.</p>
-            <p><b>Year of Primary School(YYYY):</b> 2011</p>
+            <p><b>Year of Primary School(YYYY):</b> 2003-2011</p>
             <p><b>Name of Secoundary School:</b> Federal Government College Nise, Anambra State, Nigeria.</p>
-            <p><b>Year of Secoundary School(YYYY):</b> 2017</p>
+            <p><b>Year of Secoundary School(YYYY):</b> 2011-2017</p>
             <p><b>Year of O'Level(YYYY):</b> 2017</p>
+            <p><b>Name of Higher Insitution:</b> Federal Polytechnic Oko, Anambra State, Nigeria.</p>
+            <p><b>Year of Higher Insitution:</b> 2017-2019</p>
+            <p><b>Degree:</b> Junior OND(Civil Engineering)</p>
+            <p><b>Name of Higher Insitution:</b> Nnamdi Azikwe University, Anambra State, Nigeria.</p>
+            <p><b>Year of Higher Insitution:</b> 2019-2024</p>
             <h2 style="color: #ffffff; margin: 10px 0px;">Family</h2>
             <p><b>Martail Status:</b> Single</p>
             <p><b>Father's Name:</b> Late Emmanuel Ifedirichukwu Ekwueme</p>
@@ -106,6 +118,11 @@
                 <li>Drawing</li>
                 <li>Planing</li>
             </ul>
+            <h2 style="color: #ffffff; margin: 10px 0px;">Occupation</h2>
+            <p>Student/Freelancer</p>
+            <p><b>Address:</b> Joy Hostel Unizik Road, Awka</p>
+            <p><b>State/Region:</b> Anambra State</p>
+            <p><b>Country:</b> Nigeria</p>
         </div>
     </div>
 
@@ -114,18 +131,16 @@
         <div class="cover">
             <div class="work-category">
                 <button id="designing" class="active" onclick="showRequiredCategory(this)">Web Designing</button>
-                <button id="animation" onclick="showRequiredCategory(this)">Web Animations</button>
-                <button id="project" onclick="showRequiredCategory(this)">BackEnd PHP Projects</button>
+                <!-- <button id="animation" onclick="showRequiredCategory(this)">Web Animations</button>
+                <button id="project" onclick="showRequiredCategory(this)">BackEnd PHP Projects</button> -->
             </div>
             <div class="category-designing showCategory">
-                <a href="#"><img src="assets/images/plush-design-studio-q10VITrVYUM-unsplash.jpg" alt="" width="350px"></a>
-                <a href="#"><img src="assets/images/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="" width="350px"></a>
-                <a href="#"><img src="assets/images/giu-vicente-FMArg2k3qOU-unsplash.jpg" alt="" width="350px"></a>
-                <a href="#"><img src="assets/images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="" width="350px"></a>
-                <a href="#"><img src="assets/images/clement-h-95YRwf6CNw8-unsplash.jpg" alt="" width="350px"></a>
+                <a href="https://mazzydap.com"><img src="assets/images/mazzydap.PNG" alt="" width="350px"></a>
+                <a href="https://storelad.com/RedLion/"><img src="assets/images/snyc.PNG" alt="" width="350px"></a>
+                <a href="https://storelad.com/newshour/"><img src="assets/images/newshour.PNG" alt="" width="350px"></a>
             </div>
 
-            <div class="category-animation hideCategory">
+            <!-- <div class="category-animation hideCategory">
                 <a href="#"><img src="assets/images/plush-design-studio-q10VITrVYUM-unsplash.jpg" alt="" width="350px"></a>
                 <a href="#"><img src="assets/images/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="" width="350px"></a>
             </div>
@@ -134,7 +149,7 @@
                 <a href="#"><img src="assets/images/plush-design-studio-q10VITrVYUM-unsplash.jpg" alt="" width="350px"></a>
                 <a href="#"><img src="assets/images/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg" alt="" width="350px"></a>
                 <a href="#"><img src="assets/images/giu-vicente-FMArg2k3qOU-unsplash.jpg" alt="" width="350px"></a>
-            </div>
+            </div> -->
         </div>
 
     </div>
@@ -142,11 +157,17 @@
     <div class="container contact" id="contact">
         <h1>Contact</h1>
         <div class="cover">
-            <form>
-                <input type="text" name="name" placeholder="Full Nmae">
-                <input type="email" placeholder="Email">
-                <input type="email" placeholder="PortfolioPerson@email.com" disabled>
-                <textarea rows="10" cols="20" name="message" placeholder="Message"></textarea>
+            <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
+                <input type="text" name="name" placeholder="Full Name" value="<?php echo $fullName;?>">
+                <?php errorMaker(['fullName-empty', 'fullName-invalid']); ?>
+                <input type="email" placeholder="Email" value="<?php echo $email;?>" name="email">
+                <?php errorMaker(['email-empty', 'email-invalid']); ?>
+                <input type="tel" placeholder="Phone" value="<?php echo $phone;?>" name="phone">
+                <?php errorMaker(['phone-empty', 'phone-invalid']); ?>
+                <input type="text" placeholder="Subject" value="<?php echo $subject;?>" name="subject">
+                <?php errorMaker(['subject-empty', 'subject-invalid']); ?>
+                <textarea rows="10" cols="20" name="message" placeholder="Message"><?php echo $message;?></textarea>
+                <?php errorMaker(['message-empty']); ?>
                 <input type="submit" value="Contact">
             </form>
         </div>
@@ -154,7 +175,7 @@
     </div>
     <footer>
         <hr>
-        <p>Designed By Ugochukwu Ekwueme | Hydrogen Tech</p>
+        <p>Designed By Ugochukwu Ekwueme | Hydrogen Tech | HNGi8</p>
     </footer>
 
     <script src="assets/js/ScrollMagic.min.js"></script>
