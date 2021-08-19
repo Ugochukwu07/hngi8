@@ -1,0 +1,9 @@
+@import url('bootstrap.min.css');
+@import url('animate.css');
+@import url('font-awesome.min.css');
+@import url('owl.carousel.min.css');
+@import url('themify-icons.css');
+@import url('slick-theme.css');
+.nav {
+    background: #ffe7e6;
+}
