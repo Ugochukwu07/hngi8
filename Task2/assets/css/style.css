@@ -1224,7 +1224,7 @@ td {
     margin-top: 0px;
 }
 
-form p {
+form p, p.success {
     width: 80%;
     margin: auto;
     text-align: center;
@@ -1234,10 +1234,10 @@ form p {
     border: 1px solid #d6b9b9;
     background: #d6b9b9;
 }
-form p#success-form{
+p.success{
     color: green;
-    border: 1px solid green;
-    background: #green;
+    border: 1px solid #b4f9b4;
+    background: #d7fbd7;
 }
 
 .skills-info div{

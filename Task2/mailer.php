@@ -41,10 +41,10 @@ function mailing($template_file, $swap_var){
         //Server settings
         $mail->SMTPDebug = 0;                      // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
-        $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
+        $mail->Host       = 'storlad.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'ekwuemeugochukwu83@gmail.com';                     // SMTP username
-        $mail->Password   = 'Mymother147';                               // SMTP password
+        $mail->Username   = 'hngi8@storelad.com';                     // SMTP username
+        $mail->Password   = 'Mymother147h';                               // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_STARTTLS` encouraged
         $mail->Port       = 465;                                    // TCP port to connect to, use 587 for `PHPMailer::ENCRYPTION_STARTTLS` above
     

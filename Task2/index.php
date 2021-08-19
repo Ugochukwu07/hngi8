@@ -52,6 +52,12 @@ include('app.php');
     </div>
 
     <div class="container main-info-section">
+    <?php if(isset($_SESSION['message'])): ?>
+            <p class="<?php echo $_SESSION['type']; ?>"><?php echo $_SESSION['message']; ?></p>
+    <?php 
+        endif; 
+        unset($_SESSION['message'], $_SESSION['type']);
+    ?>
         <div class="text">
             <h1>
                 <span>H</span>

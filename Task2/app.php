@@ -24,8 +24,6 @@ function errorMaker($arr) {
 function setMsg($msg, $type) {
     $_SESSION['message'] = $msg;
     $_SESSION['type'] = $type;
-    header('loaction: index.php#contact');
-    exit();
 }
 
 if(isset($_POST['contact'])){
