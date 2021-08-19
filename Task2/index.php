@@ -66,7 +66,7 @@
             <a href="#contact">contact me</a>
         </div>
         <div class="profile-image">
-            <img src="https://storelad.com/profile.jpg" alt="">
+            <img src="https://storelad.com/profile.JPG" alt="">
         </div>
     </div>
 
