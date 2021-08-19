@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title></title>
+    <title>Ugochukwu</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/animate.css" />
@@ -13,12 +13,13 @@
     <div class="container navbar">
         <header>
             <div class="logo">
-                <h1>HNGi8</h1>
+                <!-- <h1>HNGi8</h1> -->
+                <img src="https://internship.zuri.team/static/media/logo.36d2d48a.svg" class="img-fluid" width="170" style="background: white; padding: 5px; border-radius: 5px;" alt="">
             </div>
             <nav>
                 <ul>
                     <li><a href="#about">about me</a></li>
-                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#skills">Career</a></li>
                     <li><a href="#work">my works</a></li>
                     <li><a href="#social">Social</a></li>
                 </ul>
@@ -65,7 +66,7 @@
             <a href="#contact">contact me</a>
         </div>
         <div class="profile-image">
-            <img src="assets/images/profile.jpg" alt="">
+            <img src="https://storelad.com/profile.jpg" alt="">
         </div>
     </div>
 
@@ -90,52 +91,21 @@
         <img src="assets/images/balaji-malliswamy-uU9ZPjNp0TY-unsplash.jpg" alt="" width="350px">
     </div>
     <div class="container skills" id="skills">
-        <h1>Skills</h1>
-        <p class="skills-info">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo laboriosam architecto enim reiciendis praesentium est magni molestiae dolorum quasi exercitationem ad quae autem molestias eveniet voluptatem veritatis voluptas unde illum, possimus dolor
-            consequatur suscipit. Quo vel natus libero odit qui?
-            <br> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo laboriosam architecto enim reiciendis praesentium est magni molestiae dolorum quasi exercitationem ad quae autem molestias eveniet voluptatem veritatis voluptas unde illum,
-            possimus dolor consequatur suscipit. Quo vel natus libero odit qui?
-        </p>
-        <div class="html">
-            <div class="tag-html">
-                <h1>HTML</h1>
-            </div>
-            <div class="progressbar">
-                <div class="bar-html">
-
-                </div>
-            </div>
-        </div>
-        <div class="css">
-            <div class="tag-css">
-                <h1>CSS</h1>
-            </div>
-            <div class="progressbar">
-                <div class="bar-css">
-
-                </div>
-            </div>
-        </div>
-        <div class="javascript">
-            <div class="tag-javascript">
-                <h1>JAVASCRIPT</h1>
-            </div>
-            <div class="progressbar">
-                <div class="bar-javascript">
-
-                </div>
-            </div>
-        </div>
-        <div class="php">
-            <div class="tag-php">
-                <h1>PHP</h1>
-            </div>
-            <div class="progressbar">
-                <div class="bar-php">
-
-                </div>
-            </div>
+        <h1>Career</h1>
+        <div class="skills-info about-me-info">
+            <h2 style="color: #ffffff; margin: 10px 0px;">Hobbies</h2>
+            <ul>
+                <li>Wrestling</li>
+                <li>Reading</li>
+                <li>Running</li>
+            </ul>
+            <h2 style="color: #ffffff; margin: 10px 0px;">Skills</h2>
+            <ul>
+                <li>Coding</li>
+                <li>Typing</li>
+                <li>Drawing</li>
+                <li>Planing</li>
+            </ul>
         </div>
     </div>
 
