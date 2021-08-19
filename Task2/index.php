@@ -65,7 +65,7 @@
             <a href="#contact">contact me</a>
         </div>
         <div class="profile-image">
-            <img src="assets/images/pocky-lee-lYpzjpGuy6o-unsplash.jpg" alt="">
+            <img src="assets/images/profile.jpg" alt="">
         </div>
     </div>
 
