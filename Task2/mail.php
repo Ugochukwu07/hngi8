@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- My mail template -->
 <html lang="en">
     <head>
         <title>Mail</title>

@@ -1,4 +1,8 @@
 <?php
+/* 
+This is to check if the server is running in my local system
+in other to set the local variables eg Demo for mailing
+*/
 if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on'){  
     $url = "https://";   
 }else{ 
@@ -11,10 +15,12 @@ $LOCAL = strpos($url, 'localhost:8080') ? 1 : 0;
 define('ROOT_PATH', realpath(dirname(__FILE__)));
 if($LOCAL){
     define("DEMO", TRUE);
+    /* This will disable the mails from sending */
 }else {
     define("DEMO", FALSE);
 }
-include('app.php');
+//Includuing my application where my main php code will run
+include(ROOT_PATH . '/app.php');
 
 ?>
 <!DOCTYPE html>
@@ -38,7 +44,7 @@ include('app.php');
         <header>
             <div class="logo">
                 <!-- <h1>HNGi8</h1> -->
-                <img src="https://internship.zuri.team/static/media/logo.36d2d48a.svg" class="img-fluid" width="170" style="background: white; padding: 5px; border-radius: 5px;" alt="">
+                <a href="https://internship.zuri.team"><img src="https://internship.zuri.team/static/media/logo.36d2d48a.svg" class="img-fluid" width="170" style="background: white; padding: 5px; border-radius: 5px;" alt=""></a>
             </div>
             <nav>
                 <ul>
@@ -191,6 +197,9 @@ include('app.php');
     <div class="container contact" id="contact">
         <h1>Contact</h1>
         <div class="cover">
+            <?php 
+                #forms will be forwarded to the same page. I used htmlspecialchars($_SERVER['PHP_SELF']) to avoid XSS attack
+            ?>
             <form method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
                 <input type="text" name="fullName" placeholder="Full Name" value="<?php echo $fullName;?>">
                 <?php errorMaker(['fullName-empty', 'fullName-invalid']); ?>
@@ -211,7 +220,7 @@ include('app.php');
         <hr>
         <p>Designed By Ugochukwu Ekwueme | Hydrogen Tech | HNGi8</p>
     </footer>
-
+<!-- JavaScrpit Files -->
     <script src="assets/js/ScrollMagic.min.js"></script>
     <script src="assets/js/animation.gsap.min.js"></script>
     <script src="assets/js/TimelineLite.min.js"></script>

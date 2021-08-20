@@ -51,6 +51,7 @@ function mailing($template_file, $swap_var){
         //Recipients
         $mail->setFrom('ekwuemeugochukwu83@gmail.com', 'Ekwueme Ugochukwu HNGi8');
         $mail->addAddress($email_to, $swap_var['#fullName#']);
+        /* A copy will be sent to me for archiving */
         $mail->addCC('ekwuemeugochukwu83@gmail.com', 'Ekwueme Ugochukwu HNGi8 Archive');
     
     
@@ -60,6 +61,7 @@ function mailing($template_file, $swap_var){
         $mail->Body    = $email_message;
         $mail->send();
     } catch (Exception $e) {
+        /* If theres an error */
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
 }

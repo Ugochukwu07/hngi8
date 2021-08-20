@@ -17,48 +17,31 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
             
-            <nav class="navbar navbar-default" role="navigation">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Title</a>
-                </div>
-            
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
-                    <li class="nav-item mr-auto">
-                <a class="nav-link" href="#"><img src="./assets/images/logo.svg" class="img-fluid" alt=""></a>
-            </li>
-                        <li><a href="#">Link</a></li>
-                    </ul>
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Action</a></li>
-                                <li><a href="#">Another action</a></li>
-                                <li><a href="#">Something else here</a></li>
-                                <li><a href="#">Separated link</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
+            <nav class="navbar navbar-default text-center" role="navigation">
+                <a href="https://internship.zuri.team"><img src="https://internship.zuri.team/static/media/logo.36d2d48a.svg" class="img-fluid m-auto" width="170" style="background: white; padding: 5px; border-radius: 5px;" alt=""></a>
             </nav>
-            
-        </nav>
+            <main>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <h1>Task 1</h1>
+                            <a href="./Task1/">
+                                <img src="https://storelad.com/task1.PNG" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <h1>Task 2</h1>
+                            <a href="./Task2/">
+                                <img src="https://storelad.com/task2.PNG" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </main>
         
         <script src="./assets/js/jquery-3.4.1.min.js" async defer></script>
         <script src="./assets/js/plugins-jquery.js" async defer></script>
         <script src="./assets/js/bootstrap.bundle.min.js" async defer></script>
-        <script src="./assets/js/owl-carousel.min.js" async defer></script>
         <script src="./assets/js/main.js" async defer></script>
     </body>
 </html>
