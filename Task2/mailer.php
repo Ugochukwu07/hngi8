@@ -41,7 +41,7 @@ function mailing($template_file, $swap_var){
         //Server settings
         $mail->SMTPDebug = 0;                      // Enable verbose debug output
         $mail->isSMTP();                                            // Send using SMTP
-        $mail->Host       = 'mail.storlad.com';                    // Set the SMTP server to send through
+        $mail->Host       = 'mail.storelad.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
         $mail->Username   = 'hngi8@storelad.com';                     // SMTP username
         $mail->Password   = 'Mymother147h';                               // SMTP password

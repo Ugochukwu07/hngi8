@@ -1224,7 +1224,7 @@ td {
     margin-top: 0px;
 }
 
-form p, p.success {
+form p, p.success, .danger {
     width: 80%;
     margin: auto;
     text-align: center;

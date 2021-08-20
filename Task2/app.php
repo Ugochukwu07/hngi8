@@ -46,5 +46,6 @@ if(isset($_POST['contact'])){
         $phone = $_POST['phone'];
         $subject = $_POST['subject'];
         $message = $_POST['message'];
+        setMsg('Error. Scroll Down and try again', 'danger');
     }
 }
